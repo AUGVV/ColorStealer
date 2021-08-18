@@ -1,0 +1,46 @@
+﻿<Window x:Class="ColorStealer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ColorStealer"
+        mc:Ignorable="d"
+        Title="ColorStealer" Height="156.783" Width="395.983" WindowStyle="None" ResizeMode="NoResize" Topmost="True" AllowsTransparency="True">
+    <Window.Background>
+        <SolidColorBrush Color="White" Opacity="0"/>
+    </Window.Background>
+    <Grid IsHitTestVisible="False">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Позиция Х:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="150" FontSize="22" Foreground="#FFFFF300"/>
+        <Label Content="Позиция Y:" HorizontalAlignment="Left" Margin="10,54,0,0" VerticalAlignment="Top" Width="141" FontSize="22" Foreground="#FFFFF300"/>
+        <Label Content="Цветность:" HorizontalAlignment="Left" Margin="10,98,0,0" VerticalAlignment="Top" Width="124" FontSize="22" Foreground="#FFFFF300"/>
+        <Label x:Name="XLabel" Content="0" HorizontalAlignment="Left" Margin="139,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.208,0.731" FontSize="22" Foreground="#FFFFF300"/>
+        <Label x:Name="YLabel" Content="0" HorizontalAlignment="Left" Margin="139,54,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.208,0.731" FontSize="22" Foreground="#FFFFF300"/>
+        <Label x:Name="ColorLabel" Content="0" HorizontalAlignment="Left" Margin="139,98,0,0" VerticalAlignment="Top" RenderTransformOrigin="2.208,0.731" FontSize="22" Foreground="#FFFFF300"/>
+        <Rectangle x:Name="ColorViewer" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="37" Margin="342,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="44"/>
+        <Label Content="NumPad&quot;+&quot;:" HorizontalAlignment="Left" Margin="332,47,-5,0" VerticalAlignment="Top" Width="69" FontSize="10" Foreground="#FFFFF300"/>
+        <Label Content="Save Color" HorizontalAlignment="Left" Margin="332,57,0,0" VerticalAlignment="Top" Width="64" FontSize="10" Foreground="#FFFFF300"/>
+        <Label Content="NumPad&quot;-&quot;: " HorizontalAlignment="Left" Margin="332,72,0,0" VerticalAlignment="Top" Width="64" FontSize="10" Foreground="#FFFFF300"/>
+        <Label Content="Exit" HorizontalAlignment="Left" Margin="332,82,0,0" VerticalAlignment="Top" Width="64" FontSize="10" Foreground="#FFFFF300"/>
+        <Label Content="NumPad5: " HorizontalAlignment="Left" Margin="332,100,0,0" VerticalAlignment="Top" Width="64" FontSize="10" Foreground="#FFFFF300"/>
+        <Label Content="Light mode" HorizontalAlignment="Left" Margin="332,111,0,0" VerticalAlignment="Top" Width="64" FontSize="10" Foreground="#FFFFF300"/>
+        <Label Content="--------------" HorizontalAlignment="Left" Margin="321,62,-5,0" VerticalAlignment="Top" Width="80" Foreground="#FFFFF300" Height="23" BorderThickness="0"/>
+        <Label Content="--------------" HorizontalAlignment="Left" Margin="321,90,-5,0" VerticalAlignment="Top" Width="80" Foreground="#FFFFF300" Height="23" BorderThickness="0"/>
+        <Label Content="NumPad4:" HorizontalAlignment="Left" Margin="273,0,0,0" VerticalAlignment="Top" Width="64" FontSize="10" Foreground="#FFFFF300"/>
+        <Label Content="ToLeft" HorizontalAlignment="Left" Margin="273,10,0,0" VerticalAlignment="Top" Width="64" FontSize="10" Foreground="#FFFFF300"/>
+        <Label Content="NumPad6:" HorizontalAlignment="Left" Margin="273,24,0,0" VerticalAlignment="Top" Width="64" FontSize="10" Foreground="#FFFFF300"/>
+        <Label Content="--------------" HorizontalAlignment="Left" Margin="257,15,0,0" VerticalAlignment="Top" Width="80" Foreground="#FFFFF300" Height="23" BorderThickness="0"/>
+        <Label Content="ToRight" HorizontalAlignment="Left" Margin="273,34,0,0" VerticalAlignment="Top" Width="64" FontSize="10" Foreground="#FFFFF300"/>
+        <Label Content="NumPad8:" HorizontalAlignment="Left" Margin="273,47,0,0" VerticalAlignment="Top" Width="66" FontSize="10" Foreground="#FFFFF300"/>
+        <Label Content="ToUp" HorizontalAlignment="Left" Margin="273,57,0,0" VerticalAlignment="Top" Width="64" FontSize="10" Foreground="#FFFFF300"/>
+        <Label Content="NumPad2:" HorizontalAlignment="Left" Margin="273,72,0,0" VerticalAlignment="Top" Width="64" FontSize="10" Foreground="#FFFFF300"/>
+        <Label Content="--------------" HorizontalAlignment="Left" Margin="257,62,0,0" VerticalAlignment="Top" Width="80" Foreground="#FFFFF300" Height="23" BorderThickness="0"/>
+        <Label Content="ToDown" HorizontalAlignment="Left" Margin="273,82,0,0" VerticalAlignment="Top" Width="64" FontSize="10" Foreground="#FFFFF300"/>
+        <Label Content="--------------" HorizontalAlignment="Left" Margin="257,39,0,0" VerticalAlignment="Top" Width="80" Foreground="#FFFFF300" Height="23" BorderThickness="0"/>
+        <Label Content="--------------" HorizontalAlignment="Left" Margin="257,90,0,0" VerticalAlignment="Top" Width="80" Foreground="#FFFFF300" Height="23" BorderThickness="0"/>
+        <Label Content="NumPad&quot;/&quot;:" HorizontalAlignment="Left" Margin="273,100,0,0" VerticalAlignment="Top" Width="64" FontSize="10" Foreground="#FFFFF300"/>
+        <Label Content="Reset" HorizontalAlignment="Left" Margin="273,111,0,0" VerticalAlignment="Top" Width="64" FontSize="10" Foreground="#FFFFF300"/>
+    </Grid>
+</Window>
